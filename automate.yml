@@ -1,0 +1,19 @@
+crosscompute: 0.9.4
+name: PDF to Images
+version: 0.1.0
+input:
+  variables:
+    - id: pdf_input
+      view: file
+      path: Input.pdf
+      label: Select Your PDF File
+output:
+  variables:
+    - id: zip_file
+      view: link
+      path: output.zip
+      label: Click on the link below to download your images compressed in a zip file
+batches:
+  - folder: batches/standard
+scripts:
+  - path: run.ipynb
