@@ -16,4 +16,10 @@ output:
 batches:
   - folder: batches/standard
 scripts:
-  - path: run.ipynb
+  - path: run.py
+environment:
+  packages:
+    - id: PyMuPDF
+      manager: pip
+    - id: zipfile36
+      manager: pip
