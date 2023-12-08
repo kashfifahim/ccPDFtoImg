@@ -7,12 +7,16 @@ input:
       view: file
       path: Input.pdf
       label: Select Your PDF File
+  templates:
+    - path: input.md
 output:
   variables:
     - id: zip_file
       view: link
       path: output.zip
       label: Click on the link below to download your images compressed in a zip file
+  templates:
+    - path: output.md
 batches:
   - folder: batches/standard
 scripts:
